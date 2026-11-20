@@ -17,11 +17,14 @@ $(document).ready(function() {
                 const cell = document.createElement('div');
                 const img = document.createElement("img");
                 img.setAttribute("src", "semilla_girasol.jpg");
+                img.setAttribute("width", 100);
+                img.setAttribute("height", 50);
                 cell.appendChild(img);
-                nido.appendChild(cell);
+                semillas.appendChild(cell);
             }
         }
     }
+    cargarSemillas(2, 2);
 
     let nido = document.getElementById("nido");
     function cargarNido(x) {
@@ -55,4 +58,11 @@ $(document).ready(function() {
         cargarNido(5)
     });
 
+    function aumentarHambre() {
+
+    }
+
+    setInterval(() => {
+        aumentarHambre();
+    }, 8000);
 })
