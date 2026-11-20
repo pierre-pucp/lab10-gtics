@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL JUEGO DE LA PERDIZ MORUNA Y LAS SEMILLAS DE GIRASOL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>EL JUEGO DE LA PERDIZ MORUNA Y LAS SEMILLAS DE GIRASOL</h1>
+
+
+        <div>
+            <div id="alertaMensaje"></div>
+            <label for="grid-size">Dimensiones del kernel :</label>
+            <input type="number" id="grid-size" value="2">
+            <button id="btn-crear">Crear</button>
+        </div>
+
+        <div>
+            <p>Arrastra las semillas</p>
+            <div id="semillas"></div>
+        </div>
+
+        <button id="btn-reiniciar">Reiniciar</button>
+        <button id="btn-pausar">Pausar / Continuar</button>
+
+        <div id="nido" class="nido"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
